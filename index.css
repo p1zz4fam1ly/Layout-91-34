@@ -1,0 +1,465 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* membuat style pada header */
+.header{
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+/* membuat style pada navigator/topnav */
+.topnav{
+    overflow: hidden;
+    background-color: rgb(255, 255, 131);
+}
+/* membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: pink;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: rgb(255, 234, 151);
+    color: cornflowerblue;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+/* membuat style pada column kanan-kiri */
+.column.side{
+    width: 25%;
+}
+/* membuat style pada column tengah */
+.column.middle{
+    width:50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: lemonchiffon;
+    padding: 10px;
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* membuat style pada header */
+.header{
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+/* membuat style pada navigator/topnav */
+.topnav{
+    overflow: hidden;
+    background-color: rgb(255, 255, 131);
+}
+/* membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: pink;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: rgb(255, 234, 151);
+    color: cornflowerblue;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+/* membuat style pada column kanan-kiri */
+.column.side{
+    width: 25%;
+}
+/* membuat style pada column tengah */
+.column.middle{
+    width:50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: lemonchiffon;
+    padding: 10px;
+    text-align: center;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "titik";
+    src: url("matcha_mint/Matcha Mint.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "hello";
+    src: url("verandah_reverie/VerandahReverie_PERSONAL_USE_ONLY.otf") format("opentype");
+}
+
+/* Keyframes Animasi Shake / Goyang saat Diklik */
+@keyframes shakeEffect {
+    0% { transform: scale(1.05) rotate(0deg); }
+    20% { transform: scale(1.05) rotate(-4deg) translateX(-3px); }
+    40% { transform: scale(1.05) rotate(4deg) translateX(3px); }
+    60% { transform: scale(1.05) rotate(-3deg) translateX(-2px); }
+    80% { transform: scale(1.05) rotate(3deg) translateX(2px); }
+    100% { transform: scale(1.05) rotate(0deg); }
+}
+
+body {
+    background-image: url("download (2).jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px 0 40px 0;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="%2300bfff" opacity="0.8"/><circle cx="12" cy="12" r="4" fill="%23ffffff"/></svg>') 12 12, auto !important;
+}
+
+.foto:hover, h1:hover, h2:hover, .audio-container audio:hover, .kotakB:hover, .header-image:hover, .item-card:hover, .section-title:hover, .sub-header-title:hover {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="%23ff1493" opacity="0.8"/><circle cx="12" cy="12" r="5" fill="%23ffffff"/></svg>') 12 12, pointer !important;
+}
+
+.header-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+h2 {
+    color: darkblue;
+    font-size: 24px;
+    background-color: lemonchiffon;
+    text-align: center;
+    font-family: "hello", sans-serif;
+    padding: 8px 20px;
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 8px;
+    user-select: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+h2:hover {
+    transform: scale(1.1);
+    background-color: #ffb6c1;
+    color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(255, 182, 193, 0.6);
+}
+
+h2:active {
+    animation: shakeEffect 0.3s ease-in-out;
+}
+
+
+h1 {
+    color: white;
+    background-color: #1e88e5;
+    text-align: center;
+    width: fit-content;
+    padding: 8px 25px;
+    margin: 10px auto;
+    font-family: "titik", sans-serif;
+    border-radius: 8px;
+    user-select: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1:hover {
+    background-color: #ff4081;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(255, 64, 129, 0.5);
+}
+
+h1:active {
+    animation: shakeEffect 0.3s ease-in-out;
+}
+
+.image-decor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.header-image {
+    max-width: 280px;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    padding: 0;
+    margin: 0;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    user-select: none;
+}
+
+.header-image:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px #FFD700);
+}
+
+.header-image:active {
+    animation: shakeEffect 0.3s ease-in-out;
+}
+
+.sub-header-title {
+    background-color: #ff69b4;
+    color: white;
+    font-family: "titik", sans-serif;
+    font-size: 20px;
+    padding: 6px 20px;
+    border-radius: 0 0 12px 12px;
+    margin-top: 0;
+    display: inline-block;
+    user-select: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.sub-header-title:hover {
+    transform: scale(1.1);
+    background-color: #ff1493;
+    box-shadow: 0px 8px 20px rgba(255, 20, 147, 0.4);
+}
+
+.sub-header-title:active {
+    animation: shakeEffect 0.3s ease-in-out;
+}
+
+.kotak-wrapper {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+}
+
+.kotakB {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 680px; 
+    background-color: lightpink; 
+    color: midnightblue;
+    padding: 25px 30px;
+    border-radius: 15px;
+    border: 2px solid #ffb6c1;
+    transition: transform 0.3s ease, background-color 0.4s ease, box-shadow 0.3s ease;
+}
+
+.kotakB:hover {
+    transform: scale(1.03); 
+    background-color: #dbeafe; 
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.foto {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid red;
+    flex-shrink: 0;
+}
+
+.foto img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.foto img.top {
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto img.bottom {
+    opacity: 0;
+    z-index: 1;
+}
+
+.foto:hover img.top {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.foto:hover img.bottom {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.isi p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+
+.section-title-container {
+    text-align: center;
+    margin: 40px auto 20px auto;
+}
+
+.section-title {
+    background-color: #ff69b4;
+    color: white;
+    font-family: "titik", sans-serif;
+    font-size: 22px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    user-select: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-title:hover {
+    transform: scale(1.12);
+    background-color: #ff1493;
+    box-shadow: 0px 8px 20px rgba(255, 20, 147, 0.4);
+}
+
+.section-title:active {
+    animation: shakeEffect 0.3s ease-in-out;
+}
+
+
+.section-title.country-title {
+    background-color: #4ea8de;
+}
+
+.section-title.country-title:hover {
+    background-color: #0077b6;
+    box-shadow: 0px 8px 20px rgba(0, 119, 182, 0.4);
+}
+
+.section-title.animal-title {
+    background-color: #2a9d8f;
+}
+
+.section-title.animal-title:hover {
+    background-color: #16695e;
+    box-shadow: 0px 8px 20px rgba(22, 105, 94, 0.4);
+}
+
+.section-title.movie-title {
+    background-color: #9d4edd;
+}
+
+.section-title.movie-title:hover {
+    background-color: #6a040f;
+    box-shadow: 0px 8px 20px rgba(106, 4, 15, 0.4);
+}
+
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+    padding: 0 20px;
+}
+
+.item-card {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 160px;
+    user-select: none;
+}
+
+.item-card:hover {
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 0px 12px 20px rgba(0,0,0,0.2);
+    background-color: #ffffff;
+}
+
+.item-card:active {
+    animation: shakeEffect 0.3s ease-in-out;
+}
+
+.item-card img {
+    width: 136px;
+    height: 136px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #ffb6c1;
+    padding: 0;
+}
+
+.item-card p {
+    margin: 10px 0 2px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: midnightblue;
+    font-family: sans-serif;
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px auto 20px auto;
+}
+
+.audio-container audio {
+    width: 300px;
+    height: 45px;
+    outline: none;
+    border: 3px solid #1e88e5;
+    border-radius: 30px;
+    box-shadow: 0px 6px 15px rgba(30, 136, 229, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.audio-container audio:hover {
+    transform: scale(1.05);
+}
+
+.audio-container audio::-webkit-media-controls-enclosure,
+.audio-container audio::-webkit-media-controls-panel {
+    background-color: lemonchiffon;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto; 
+    max-height: 200px; 
+    object-fit: contain; 
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout Website</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- Membuat HEADER -->
+         <div class="header">
+            <h1>HEADER</h1>
+         </div>
+         <!-- membuat navigator menu -->
+          <div class="topnav">
+            <a href="index.html">Biodata</a>
+            <a href="#">Table</a>
+            <a href="#">List</a>
+            <a href="#">STS</a>
+          </div>
+          <!-- Membuat Content -->
+           <div class="row">
+     <!DOCTYPE html>
+<html>
+    <head>
+        <title>Biodata Diri</title>
+        <link rel="stylesheet" href="biodatastyle.css">
+        <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    #flower-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .flower {
+      position: absolute;
+      top: -10%;
+      pointer-events: none;
+      will-change: transform;
+      animation: fall linear infinite, sway ease-in-out infinite alternate;
+    }
+
+    .flower svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    @keyframes fall {
+      0% { top: -10%; }
+      100% { top: 105vh; }
+    }
+
+    @keyframes sway {
+      0% { transform: translateX(0px) rotate(0deg); }
+      100% { transform: translateX(40px) rotate(120deg); }
+    }
+        </style>
+    </head>
+    <body>
+        <div id="flower-container"></div>
+
+        <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("flower-container");
+      const starCount = 45;
+
+      const starSVG = `
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,5 64,36 98,36 70,57 81,91 50,70 19,91 30,57 2,36 36,36" fill="#ffd700" />
+        </svg>
+      `;
+
+      for (let i = 0; i < starCount; i++) {
+        const star = document.createElement("div");
+        star.classList.add("flower");
+        star.innerHTML = starSVG;
+
+        const size = Math.random() * 12 + 15;
+        const leftPos = Math.random() * 100;
+        const fallDuration = Math.random() * 4 + 4;
+        const swayDuration = Math.random() * 2 + 2;
+        const delay = Math.random() * 6;
+
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        star.style.left = `${leftPos}vw`;
+        star.style.animationDuration = `${fallDuration}s, ${swayDuration}s`;
+        star.style.animationDelay = `${delay}s, ${delay}s`;
+
+        container.appendChild(star);
+      }
+    });
+        </script>
+
+        <div class="header-container">
+            <h2>Selamat Datang Di Website Pertama Saya!</h2>
+            <h1>BIODATA DIRI</h1>
+        </div>
+     
+        <div class="image-decor-container">
+            <img src="Black White Minimalist Calligraphy Welcome Wedding Sign Poster.png" alt="Header Decoration" class="header-image">
+            <div class="sub-header-title">Get To Know Akari</div>
+        </div>
+
+        <div class="kotak-wrapper">
+            <div class="kotakB">
+                <div class="content">
+                    <div class="foto">
+                        <img src="WhatsApp Image 2026-08-24 at 6.09.05 PM.jpeg" alt="Foto Akari" class="top">
+                        <img src="WhatsApp Image 2026-08-24 at 6.09.04 PM.jpeg" alt="Foto Kecil Akari" class="bottom">
+                    </div>
+                    <div class="isi">
+                        <p>Nama Lengkap: Sophia <b>AKARI</b> Suwendi</p>
+                        <p>Tanggal Lahir: 6 Januari 2012</p>
+                        <p>Tempat Lahir: Jakarta, Indonesia</p>
+                        <p>Alamat: Alam Sutera, Tangerang</p>
+                        <p>Email: sophia_10106@smp.santaursulajakarta</p>
+                        <p>Instagram: @sophiaa.akarii</p>
+                        <p>Hobi: Nonton & Jalan-jalan</p>
+                        <p>Motto: Try and Trust, God Will Make Way</p>
+                        <p>Pesan: You Only Live Once!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section-title-container">
+            <div class="section-title">Makanan Favorit</div>
+        </div>
+
+        <div class="grid-container">
+            <div class="item-card">
+                <img src="sushi.png.png" alt="Sushi">
+                <p>Sushi</p>
+            </div>
+            <div class="item-card">
+                <img src="pasta.png.png"Pasta">
+                <p>Pasta</p>
+            </div>
+            <div class="item-card">
+                <img src="pizza.png.png" alt="Pizza">
+                <p>Pizza</p>
+            </div>
+            <div class="item-card">
+                <img src="ramen.png.png" alt="Ramen">
+                <p>Ramen</p>
+            </div>
+            <div class="item-card">
+                <img src="tiramisu.png.png" alt="Tiramisu">
+                <p>Tiramisu</p>
+            </div>
+        </div>
+
+    
+        <div class="section-title-container">
+            <div class="section-title country-title">Negara Favorit</div>
+        </div>
+
+        <div class="grid-container">
+            <div class="item-card">
+                <img src="japan.png.png" alt="Japan">
+                <p>Japan</p>
+            </div>
+            <div class="item-card">
+                <img src="australia.png.png" alt="Australia">
+                <p>Australia</p>
+            </div>
+            <div class="item-card">
+                <img src="hungary.png.png" alt="Hungary">
+                <p>Hungary</p>
+            </div>
+            <div class="item-card">
+                <img src="indonesia.png.png" alt="Indonesia">
+                <p>Indonesia</p>
+            </div>
+            <div class="item-card">
+                <img src="taiwan.png.png" alt="Taiwan">
+                <p>Taiwan</p>
+            </div>
+        </div>
+
+       
+        <div class="section-title-container">
+            <div class="section-title animal-title">Hewan Favorit</div>
+        </div>
+
+        <div class="grid-container">
+            <div class="item-card">
+                <img src="duck.jpg" alt="Duck">
+                <p>Duck</p>
+            </div>
+            <div class="item-card">
+                <img src="dog.jpg" alt="Dog">
+                <p>Dog</p>
+            </div>
+            <div class="item-card">
+                <img src="deer.jpg" alt="Deer">
+                <p>Deer</p>
+            </div>
+            <div class="item-card">
+                <img src="otter.jpg" alt="Otter">
+                <p>Otter</p>
+            </div>
+            <div class="item-card">
+                <img src="goat.jpg" alt="Goat">
+                <p>Goat</p>
+            </div>
+        </div>
+
+     
+        <div class="section-title-container">
+    <div class="section-title movie-title">Film Favorit</div>
+</div>
+
+<div class="grid-container">
+    <div class="item-card movie-card">
+        <img src="heroes.jpg" alt="We Can Be Heroes">
+        <p>We Can Be Heroes</p>
+    </div>
+    <div class="item-card movie-card">
+        <img src="zombies.jpg" alt="Zombies"> 
+        <p>Zombies</p>
+    </div>
+    <div class="item-card movie-card">
+        <img src="avatar 2.jpg" alt="Avatar: The Way of Water">
+        <p>Avatar: The Way of Water</p>
+    </div>
+    <div class="item-card movie-card">
+        <img src="parents trap.jpg" alt="The Parent Trap">
+        <p>The Parent Trap</p>
+    </div>
+    <div class="item-card movie-card">
+        <img src="moana.jpg" alt="Moana">
+        <p>Moana</p>
+    </div>
+</div>
+        <div class="audio-container">
+            <audio controls>
+                <source src="ScreenRecording_08-26-2026 7-10-09_PM_1.mp3 - Copy.mpeg" type="audio/mpeg">
+            </audio>
+        </div>
+    </body>
+</html>
+           <!-- Membuat Footer -->
+            <div class="Footer">
+                <h2>Footer</h2>
+            </div>
+    </body>
+</html>
